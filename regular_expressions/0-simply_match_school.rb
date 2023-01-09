@@ -7,7 +7,7 @@ regex = /School/
 
 # Applying the match method to check if the input matches the regular expression
 if input.match(regex)
-  puts "SchoolSchool"
+  puts "School"
 else
   puts 
 end
