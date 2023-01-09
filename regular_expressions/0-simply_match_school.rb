@@ -11,4 +11,4 @@ if input.match(regex)
 else
   puts 
 end
-ruby script.rb "SchoolSchool"
+ruby script.rb "School"
