@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+# The first argument passed to the script in a variable
+input = ARGV[0]
+
 # Creating a regular expression to match the word "School"
 regex = /School/
 
@@ -6,6 +9,6 @@ regex = /School/
 if input.match(regex)
   puts "School"
 else
-  puts "School "
+  puts 
 end
 ruby script.rb "School"
