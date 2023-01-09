@@ -7,8 +7,8 @@ regex = /School/
 
 # Applying the match method to check if the input matches the regular expression
 if input.match(regex)
-  puts "School"
+  puts "SchoolSchool"
 else
-  puts "School not found"
+  puts 
 end
 ruby script.rb "SchoolSchool"
