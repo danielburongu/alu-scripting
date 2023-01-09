@@ -6,6 +6,6 @@ regex = /School/
 if input.match(regex)
   puts "School"
 else
-  puts 
+  puts "School "
 end
 ruby script.rb "School"
