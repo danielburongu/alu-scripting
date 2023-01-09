@@ -9,6 +9,6 @@ regex = /School/
 if input.match(regex)
   puts "School"
 else
-  puts "SchoolSchool"
+  puts "School not found"
 end
-ruby script.rb "School"
+ruby script.rb "SchoolSchool"
