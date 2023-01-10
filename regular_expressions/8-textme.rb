@@ -14,4 +14,4 @@ flags = transaction.match(flags_regex)[1]
 
 # Output of the sender, receiver, and flags information
 puts "[#{sender}],[#{receiver}],[#{flags}]"
-ruby extract_info.rb "sender:+1234567890 receiver:+0987654321 flags:urgent important"
+ruby extract_info.rb "sender:14137289325,14136574237,-1:0:-1:-1:-1 receiver:+17654650874,+15635593023,-1:0:-1:0:-1 flags:urgent important"
