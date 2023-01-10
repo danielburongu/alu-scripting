@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # The first argument passed to the script in a variable
-input = ARGV[0]
+input = ARGV[0].scan(/School/).join
 
 # Creating a regular expression to match the word "School"
 regex = /School/
