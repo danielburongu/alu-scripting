@@ -12,3 +12,4 @@ else
   puts "hbttn"
 end
 ruby regex_match.rb "hbttn"
+puts ARGV[0].scan(/hbt{2,5}n/).join
