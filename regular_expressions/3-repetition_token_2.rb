@@ -9,6 +9,6 @@ regex = /your-regex-here/
 if string.match(regex)
   puts "hbn"
 else
-  puts ""
+  puts "hbtn"
 end
 ruby regex_match.rb "hbtn"
