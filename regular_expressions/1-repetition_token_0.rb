@@ -7,7 +7,7 @@ regex = /your-regex-here/
 
 # Using the `match` method to check whether the string matches the regular expression
 if string.match(regex)
-  puts "hbttttttn"
+  puts ""
 else
   puts "hbtttn"
 end
