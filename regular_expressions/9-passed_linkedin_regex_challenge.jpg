@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+/^linkedin\.com\/in\/[a-z\d\-_\.]+[a-z\d]$/
+def is_valid_linkedIn_url(url)
+  regex = /^linkedin\.com\/in\/[a-z\d\-_\.]+[a-z\d]$/
+  url.match(regex) ? true : false
+end
