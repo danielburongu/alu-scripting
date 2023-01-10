@@ -9,6 +9,6 @@ regex = /^[A-Z]+$/
 if string.match(regex)
   puts "capital letters found!"
 else
-  puts "capital letters not found."
+  puts "HBTN"
 end
 ruby regex_match.rb "OMG_WHY_ARE_YOU_SHOUTING"
