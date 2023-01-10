@@ -11,4 +11,4 @@ if string.match(regex)
 else
   puts "h9n"
 end
-ruby regex_match.rb "Hhn"
+ruby regex_match.rb "h9n"
