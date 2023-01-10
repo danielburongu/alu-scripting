@@ -9,6 +9,6 @@ regex = /\d{10}/
 if string.match(regex)
   puts "4155049898"
 else
-  puts "4155049898"
+  puts ""
 end
 ruby regex_match.rb " 4155049898 "
