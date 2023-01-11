@@ -7,8 +7,8 @@ regex = /your-regex-here/
 
 # applying  the `match` method to check whether the string matches the regular expression
 if string.match(regex)
-  puts "hbn"
-else
   puts "hbt"
+else
+  puts ""
 end
 ruby regex_match.rb "hbtn"
