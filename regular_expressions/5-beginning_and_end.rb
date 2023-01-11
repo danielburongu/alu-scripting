@@ -1,14 +1,5 @@
 #!/usr/bin/env ruby
 # using the command line argument
-string = ARGV[0]
-
 #the regular expression
-regex = /^h.n$/
-
-# applying the `match` method to check whether the string matches the regular expression
-if string.match(regex)
-  puts (/h.n/)
-else
-  puts "hhn"
-end
-ruby regex_match.rb "h9n"
+# applying the `scan and join` method to check whether the string matches the regular expression
+puts ARGV[0].scan(/h.n/).join
