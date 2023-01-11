@@ -7,7 +7,7 @@ regex = /^h.n$/
 
 # applying the `match` method to check whether the string matches the regular expression
 if string.match(regex)
-  puts "h9n"
+  puts (/h.n/)
 else
   puts "hhn"
 end
