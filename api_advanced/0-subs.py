@@ -15,7 +15,7 @@ def number_of_subscribers(subreddit):
 # If the response status code is not 200, return 0
     if res.status_code != 200:
         return 0
-# Otherwise, extract the JSON data from the response and return the number of subscribers
+# extract JSON data from the response and return the number of subscribers
     else:
 # Convert the JSON response to a Python dictionary using the `json()` method
         json_response = res.json()
