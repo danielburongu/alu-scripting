@@ -18,7 +18,7 @@ def number_of_subscribers(subreddit):
         return 0
 # extract JSON data from the response and return the number of subscribers
     else:
-        """Convert the JSON response to a Python dictionary using the `json()` method"""
+        """Convert JSON response to a Python dictionary `json()` method"""
         json_response = res.json()
 # Extract the number of subscribers JSON response using the `get()` method
         subscribers = json_response.get('data').get('subscribers')
