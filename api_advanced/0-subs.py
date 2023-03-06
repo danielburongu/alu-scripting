@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""""Doc"""
+""""Documentation for the `0-subs.py` module."""
 # Import the requests module for sending HTTP requests
 import requests
 
 # Define the function `number_of_subscribers` that takes a subreddit
 def number_of_subscribers(subreddit):
     """Returns the number of subscribers for a given subreddit."""
+
 
 # Create the URL for the subreddit's about.json page using string formatting
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
