@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""""Documentation"""
+""""Documentation for subs  module"""
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """"Documentation"""
+    """"Documentation for subs function"""
     url = "https://www.reddit.com/r/{}/about.json" \
         .format(subreddit)
 
