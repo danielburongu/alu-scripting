@@ -3,7 +3,7 @@
 # Import the requests module for sending HTTP requests
 import requests
 
-# Define the function `number_of_subscribers` that takes a subreddit 
+# Define the function `number_of_subscribers` that takes a subreddit
 def number_of_subscribers(subreddit):
 
 # Create the URL for the subreddit's about.json page using string formatting
