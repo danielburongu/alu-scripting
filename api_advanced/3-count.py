@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""""Documentation for count_words module"""
+""""Doc"""
 import requests
 
 
 def count_words(subreddit, word_list, after="", words_count={}):
-    """"Documentation for count_words function"""
+    """"Doc"""
     url = "https://www.reddit.com/r/{}/hot.json?limit=100" \
         .format(subreddit)
     header = {'User-Agent': 'Mozilla/5.0'}
@@ -13,8 +13,8 @@ def count_words(subreddit, word_list, after="", words_count={}):
 
     if res.status_code != 200:
         return
-    # print(res.status_code)
-    json_res = res.json()
+
+    json_res = res.json()  # change the name to make it more readable
     after = json_res.get('data').get('after')
     has_next = after is not None
     hot_titles = []
@@ -27,26 +27,29 @@ def count_words(subreddit, word_list, after="", words_count={}):
     [hot_titles.append(article.get('data').get('title'))
      for article in hot_articles]
 
-    # print(hot_titles)
+    # loop through all titles
     for i in range(len(hot_titles)):
-        # make the title as a list of word and loop through it
-        # title_words = hot_titles[i].lower().split() 
+        # make the title as a list of word
+        # title_words = hot_titles[i].lower().split()
         for title_word in hot_titles[i].lower().split():
             for word in words:
                 if word.lower() == title_word:
                     words_count[word] = words_count.get(word) + 1
-                    # print(word.lower() + " == " + title_word)
-                    # print(words_count[word])
-                
+                # else:
+                #     # pass
+                #     print(word.lower() + " != " + title_word)
 
     if has_next:
-        # print(after + "\t" + str(has_next)) 
+        # print(after + "\t" + str(has_next))
         return count_words(subreddit, word_list, after, words_count)
     else:
 
         words_count = dict(filter(lambda item: item[1] != 0,
                                   words_count.items()))
-        # print(words_count)
+        # their python version is not making people’s life easier
+        # words_count = {key: value for key, value in
+        #                sorted(words_count.items(),
+        #                       key=lambda item: item[1], reverse=True)}
 
         words_count = sorted(words_count.items(),
                              key=lambda item: item[1],
