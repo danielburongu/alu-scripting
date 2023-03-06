@@ -4,7 +4,7 @@
 import requests
 
 # Define the function `number_of_subscribers` that takes a subreddit
-def number_of_subscribers(subreddit):
+def  number_of_subscribers(subreddit):
     """Returns the number of subscribers for a given subreddit."""
 
 # Create the URL for the subreddit's about.json page using string formatting
