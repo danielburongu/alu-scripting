@@ -3,13 +3,13 @@
 # Import the requests module for sending HTTP requests
 import requests
 
-# Define the function `number_of_subscribers` that takes a subreddit name as input
+# Define the function `number_of_subscribers` that takes a subreddit 
 def number_of_subscribers(subreddit):
 
 # Create the URL for the subreddit's about.json page using string formatting
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
-# Send a GET request to the subreddit's about.json page with a 'User-Agent' header
+# Send a GET request to the subreddit's about.json page with a 'User-Agent'
     res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
 
 # If the response status code is not 200, return 0
